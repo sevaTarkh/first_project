@@ -64,13 +64,18 @@ Git хранит таблицу соответствий, Если вы знае
 
 ---
 
-##Статусы untracked/tracked, staged, modified
+## Статусы untracked/tracked, staged, modified
 1. untracked - неотслеживаемый (только добавили, не выполнили команду git add --all)
 2. staged - после выполнения команды git add файл попадает в staging area
 3. tracked - противоположность статусу untracked (все файлы которые были зафиксированы с помощью git add/git commit)
 4. modified - измененные файлы
 
 git status показывает данные состояния. 
+
+```mermaid
+modified + git add --> staged
+```
+
 
 ---
 
