@@ -73,6 +73,7 @@ Git хранит таблицу соответствий, Если вы знае
 git status показывает данные состояния. 
 
 ```mermaid
+graph LR;
 modified + git add --> staged
 ```
 
